@@ -7,6 +7,11 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-container {
     width: 1512px;
     height: 982px;
     background-color: white;
@@ -14,6 +19,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .name {
     width: 801px;
     height: 257px;
@@ -27,10 +33,12 @@ body {
     color: #000000;
     margin-top: 50px;
 }
-.icon{
+
+.icon {
     width: 70px;
     height: 70px;
 }
+
 .my-pic {
     width: 490px;
     height: 576.18px;
@@ -41,7 +49,7 @@ body {
     height: 576.18px;
     border: 5px solid black;
     border-bottom-left-radius: 45%;
-    box-shadow: 14px -15px 0px -6px rgba(0,0,0,1);
+    box-shadow: 14px -15px 0px -6px rgba(0, 0, 0, 1);
 }
 
 .description {
@@ -83,4 +91,100 @@ body {
     margin-left: 30px;
     color: white;
     background-color: black;
+}
+
+.skill-container {
+    width: 1529px;
+    height: 816px;
+    background-color: #08B7AC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-title {
+    padding-top: 70px;
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 51.3611px;
+    line-height: 78px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.skill-description {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23.1125px;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 51px;
+    color: #FFFFFF;
+}
+
+.skill-description-bottom {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23.1125px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.skills {
+    width: 1529px;
+    height: 816px;
+    background-color: #08B7AC;
+}
+
+.program-icon {
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+
+}
+
+.icon-html {
+    width: 79.34px;
+    height: 82.93px;
+}
+
+.dolor {
+    display: flex;
+}
+
+.html-container {
+    width: 117.02px;
+    height: 109.8px;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #4F89FD;
+    border-radius: 5px;
+}
+
+.program {
+    width: 120px;
+    height: 118.94px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-program {
+    width: 120px;
+    height: 30.43px;
+    font-family: 'Be Vietnam';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22.4281px;
+    /* or 132% */
+
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
 }
