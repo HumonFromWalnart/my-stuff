@@ -12,7 +12,7 @@ body {
 }
 
 .profile-container {
-    width: 1512px;
+    width: 1529px;
     height: 982px;
     background-color: white;
     display: flex;
@@ -120,7 +120,7 @@ body {
     font-size: 23.1125px;
     line-height: 35px;
     text-align: center;
-    margin-top: 51px;
+    margin-top: 21px;
     color: #FFFFFF;
 }
 
@@ -141,38 +141,31 @@ body {
 }
 
 .program-icon {
-    height: 130px;
+    height: auto;
     display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-
+    justify-content: space-evenly;
+    margin-top: 80px;
 }
 
 .icon-html {
-    width: 79.34px;
-    height: 82.93px;
-}
-
-.dolor {
-    display: flex;
+    width: 69.91px;
+    height: 69.29px;
 }
 
 .html-container {
     width: 117.02px;
     height: 109.8px;
-    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% black);
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid #4F89FD;
-    border-radius: 5px;
 }
 
 .program {
-    width: 120px;
+    width: 200px;
     height: 118.94px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .name-program {
@@ -182,9 +175,164 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 22.4281px;
-    /* or 132% */
-
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    margin-top: 50px;
+}
+
+.language {
+    width: 230.6px;
+    height: 147.5px;
+    margin-top: 30px;
+}
+
+.type {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30.8167px;
+    line-height: 47px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.type-special {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30.8167px;
+    line-height: 47px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 300px;
+    color: #FFFFFF;
+    margin-left: -30px;
+}
+
+.lore {
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20.5444px;
+    line-height: 31px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.polygon {
+    position: absolute;
+}
+
+.program-special {
+    width: 200px;
+    height: 118.94px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+* {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.project-container {
+    width: 1529px;
+    height: 1859px;
+
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project {
+    display: flex;
+}
+
+.memes {
+    height: 380px;
+    width: 415px;
+    border: 30px solid rgba(183, 76, 76, 0.35);
+    ;
+}
+
+.viem-project {
+    height: 55.7px;
+    width: 152.8px;
+    background: rgba(192, 105, 77, 0.47);
+    border-radius: 7.52941px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    width: 450px;
+    display: flex;
+    justify-content: end;
+}
+
+.viem-project-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27.1059px;
+    line-height: 41px;
+    letter-spacing: 0.245em;
+    color: #FFFFFF;
+}
+
+.fixing {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 582px;
+    justify-content: center;
+    margin-left: 50px;
+}
+.fixing-special{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 582px;
+    justify-content: center;
+    margin-left: 25px;
+    margin-right: 50px;
+}
+.project-decription-container {
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+}
+
+.project-description {
+    left: 49.14%;
+    right: 0%;
+    top: 46.8%;
+    bottom: 10.51%;
+
+    font-weight: 400;
+    font-size: 13.5529px;
+    line-height: 20px;
+    letter-spacing: 0.245em;
+
+    color: #000000;
+    margin-top: 30px;
+}
+
+.project-name {
+    width: 420px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 27.1059px;
+    line-height: 41px;
+    letter-spacing: 0.245em;
+    color: #000000;
 }
