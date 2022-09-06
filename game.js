@@ -1,6 +1,10 @@
 let botScore = 0;
 let playerScore = 0;
 let playerValue;
+
+var vid = document.getElementById("myVideo");
+vid.volume = 0.4;
+
 function randomNumber() {
   const randomNum = Math.floor(Math.random() * 3);
   let result = "";

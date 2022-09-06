@@ -1,23 +1,36 @@
 body {
     background-color: black;
-    height: 10000px;
+    height: 1000px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+*{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.container{
+    position: absolute;
+}
 .main-container {
     display: flex;
     justify-content: space-around;
     width: 1500px;
 }
 
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
 .title {
     height: 200px;
     color: blueviolet;
     font-size: 50px;
-    animation: 10s ease infinite;
+    animation: 20s text-rgb ease infinite;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,19 +75,33 @@ body {
     align-items: center;
     width: 150px;
 }
-.icons{
+
+.icons {
     margin-top: 50px;
     display: flex;
     width: 100%;
-    height: 150px;
+    height: 200px;
     justify-content: center;
 }
-.icon{
+
+.icon {
     width: 200px;
-    height: 200px;
+    height: 160px;
     border: 5px solid black;
-    border-radius: 50%;
+    border-radius: 20px;
     margin-left: 20px;
+    border: hidden;
+}
+.icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-in-da-gif{
+    position: absolute;
+    color: aliceblue;
+    background-color: black;
+    opacity: 0.6;
 }
 @keyframes text-rgb {
     0% {

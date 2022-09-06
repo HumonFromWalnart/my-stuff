@@ -6,9 +6,14 @@
         Rock, paper, Scissor
     </title>
     <link rel="stylesheet" href="game.css">
+    <link rel="icon" href="oofc.jpg">
 </head>
 
 <body>
+    <video autoplay muted loop id="myVideo">
+        <source src="let's dance!.mp4" type="video/mp4">
+    </video>
+
     <div class="container">
         <div class="title">Rock, Paper, Scissor</div>
         <div class="main-container">
@@ -17,19 +22,25 @@
                 <div class="score-text">Score</div>
                 <div class="versus">
                     <div style="display:flex">
-                    <div class="number">0</div>
-                    <div class="dot">:</div>
-                    <div class="number">0</div>
-                </div>
+                        <div class="number">0</div>
+                        <div class="dot">:</div>
+                        <div class="number">0</div>
+                    </div>
                     <div class="status" style="color:white"></div>
                 </div>
             </div>
             <div class="bot"><img class="img" src="bot.png"></div>
         </div>
         <div class="icons">
-            <div onclick="rock()"><img class="icon" src="rocks.png"></div>
-            <div onclick="scissors()"><img class="icon" src="scissors.png"></div>
-            <div onclick="paper()"><img class="icon" src="paper.png"></div>
+            <div onclick="rock()" class="icon-container"><img class="icon" src="raidan_vs_armstrong.gif">
+                <div class="text-in-da-gif">Senator Rock</div>
+            </div>
+            <div onclick="scissors()" class="icon-container"><img class="icon" src="im-fucking-invincible.gif">
+                <div class="text-in-da-gif">Invincible Paper Shield</div>
+            </div>
+            <div onclick="paper()" class="icon-container"><img class="icon" src="raiden-the-cutter.gif">
+                <div class="text-in-da-gif">Paper Cutter</div>
+            </div>
         </div>
     </div>
     <script src="game.js"></script>
