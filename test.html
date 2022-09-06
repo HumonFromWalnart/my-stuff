@@ -1,0 +1,79 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h3>Trigger Button Click on Enter</h3>
+<p>Press the "Enter" key inside the input field to trigger the button.</p>
+
+<input id="myInput" value="Some text..">
+<button id="myBtn" onclick="javascript:alert('Hello World!')">Button</button>
+
+<script>
+var input = document.getElementById("myInput");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("myBtn").click();
+  }
+});
+</script>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <button id="iterate">Iterate</button>
+<div id="red"></div>
+<div id="orange"></div>
+<div id="green"></div>
+<script>
+  let current = 0;
+
+  const lights = [
+    document.getElementById("red"),
+    document.getElementById("orange"),
+    document.getElementById("green")
+  ];
+
+  const button = document.getElementById("iterate");
+
+  button.onclick = function () {
+    lights[current].style.display = "none";
+
+    current++;
+
+    if (current == lights.length)
+      current = 0;
+
+    lights[current].style.display = "block";
+  };
+</script>
+<style>
+  div {
+    display: none;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+  }
+
+  #red {
+    display: block;
+
+    background: red;
+  }
+
+  #orange {
+    background: orange;
+  }
+
+  #green {
+    background: green;
+  }
+</style>
+  </body>
+</html>

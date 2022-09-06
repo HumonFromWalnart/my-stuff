@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Rock, paper, Scissor
+    </title>
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Rock, Paper, Scissor</div>
+        <div class="main-container">
+            <div class="player"><img draggable="false" class="img" src="player.png"></div>
+            <div class="score-border">
+                <div class="score-text">Score</div>
+                <div class="versus">
+                    <div style="display:flex">
+                    <div class="number">0</div>
+                    <div class="dot">:</div>
+                    <div class="number">0</div>
+                </div>
+                    <div class="status" style="color:white"></div>
+                </div>
+            </div>
+            <div class="bot"><img class="img" src="bot.png"></div>
+        </div>
+        <div class="icons">
+            <div onclick="game()"><img class="icon" src="rocks.png"></div>
+            <div onclick="game()"><img class="icon" src="scissors.png"></div>
+            <div onclick="game()"><img class="icon" src="paper.png"></div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>

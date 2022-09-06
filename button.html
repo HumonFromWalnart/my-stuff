@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body style="background-color: black;">
+    <div class="container">
+        <button id="Btn">Change color?</button>
+        <div id="myDIV"></div>
+        <div id="lol"></div>
+        <form>
+            <input type="button" value="Go back!" onclick="history.back()">
+        </form>
+    </div>
+    <style>
+        .container {
+            width: 500px;
+            height: 500px;
+            display: flex;
+        }
+
+        #myDIV {
+            width: 250px;
+            background-color: blue;
+            display: flex;
+            align-items: end;
+        }
+
+        #lol {
+            width: 250px;
+            background-color: red;
+            display: flex;
+            align-items: end;
+        }
+
+        .Btn{
+            position: absolute;
+        }
+    </style>
+    <script>
+        const colors = [
+            document.getElementById("lol"),
+            document.getElementById("myDIV")
+        ];
+        let current = 0;
+
+        const button = document.getElementById("Btn");
+        button.onclick = function () {
+            colors[current].style.backgroundImage = "url('normal_rock.jpg')";
+            colors[current].style.backgroundRepeat = "no-repeat";
+            colors[current].style.backgroundSize = "200px 500px";
+
+            current++;
+
+            if (current == colors.length) {
+                current = 0;
+            }
+
+            colors[current].style.backgroundImage = "sus_rock.jpg";
+            colors[current].style.backgroundRepeat = "no-repeat";
+            colors[current].style.backgroundSize = "200px 500px";
+        }
+
+            // const para = document.createElement("button");
+            //  para.innerText = "Adopt yourself to yourself";
+            //  document.getElementById("myDIV").appendChild(para);
+            //  const lol = document.createElement("button");
+            //  lol.innerText = "Adopt";
+            //  document.querySelector("#lol").appendChild(lol);
+    </script>
+</body>
+
+</html>

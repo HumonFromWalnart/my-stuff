@@ -1,0 +1,477 @@
+body {
+    background-color: black;
+    height: 10000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    width: 1500px;
+}
+
+.title {
+    height: 200px;
+    color: blueviolet;
+    font-size: 50px;
+    animation: 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    width: 500px;
+    height: 300px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.number {
+    font-size: 120px;
+    color: blueviolet;
+}
+
+.dot {
+    color: white;
+    font-size: 100px;
+}
+
+.versus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.score-text {
+    color: white;
+    font-size: 30px;
+    text-decoration: underline blueviolet;
+}
+
+.score-border {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+.icons{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+}
+.icon{
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+@keyframes text-rgb {
+    0% {
+        color: black;
+    }
+
+    1% {
+        color: red;
+    }
+
+    2% {
+        color: orangered;
+    }
+
+    3% {
+        color: orange;
+    }
+
+    4% {
+        color: orange;
+    }
+
+    5% {
+        color: yellowgreen;
+    }
+
+    6% {
+        color: green;
+    }
+
+    7% {
+        color: blue;
+    }
+
+    8% {
+        color: skyblue;
+    }
+
+    9% {
+        color: blueviolet;
+    }
+
+    10% {
+        color: rgb(255, 96, 123);
+    }
+
+    11% {
+        color: red;
+    }
+
+    12% {
+        color: orangered;
+    }
+
+    13% {
+        color: orange;
+    }
+
+    14% {
+        color: yellow;
+    }
+
+    15% {
+        color: yellowgreen;
+    }
+
+    16% {
+        color: green;
+    }
+
+    17% {
+        color: blue;
+    }
+
+    18% {
+        color: skyblue;
+    }
+
+    19% {
+        color: blueviolet;
+    }
+
+    20% {
+        color: rgb(255, 96, 123);
+    }
+
+    21% {
+        color: red;
+    }
+
+    22% {
+        color: orangered;
+    }
+
+    23% {
+        color: orange;
+    }
+
+    24% {
+        color: yellow;
+    }
+
+    25% {
+        color: yellowgreen;
+    }
+
+    26% {
+        color: green;
+    }
+
+    27% {
+        color: blue;
+    }
+
+    28% {
+        color: skyblue;
+    }
+
+    29% {
+        color: blueviolet;
+    }
+
+    30% {
+        color: rgb(255, 96, 123);
+    }
+
+    31% {
+        color: red;
+    }
+
+    32% {
+        color: orangered;
+    }
+
+    33% {
+        color: orange;
+    }
+
+    34% {
+        color: yellow;
+    }
+
+    35% {
+        color: yellowgreen;
+    }
+
+    36% {
+        color: green;
+    }
+
+    37% {
+        color: blue;
+    }
+
+    38% {
+        color: skyblue;
+    }
+
+    39% {
+        color: blueviolet;
+    }
+
+    40% {
+        color: rgb(255, 96, 123);
+    }
+
+    41% {
+        color: red;
+    }
+
+    42% {
+        color: orangered;
+    }
+
+    43% {
+        color: orange;
+    }
+
+    44% {
+        color: yellow;
+    }
+
+    45% {
+        color: yellowgreen;
+    }
+
+    46% {
+        color: green;
+    }
+
+    47% {
+        color: blue;
+    }
+
+    48% {
+        color: skyblue;
+    }
+
+    49% {
+        color: blueviolet;
+    }
+
+    50% {
+        color: rgb(255, 96, 123);
+    }
+
+    51% {
+        color: red;
+    }
+
+    52% {
+        color: orangered;
+    }
+
+    53% {
+        color: yellow;
+    }
+
+    54% {
+        color: orange;
+    }
+
+    55% {
+        color: yellowgreen;
+    }
+
+    56% {
+        color: green;
+    }
+
+    57% {
+        color: blue;
+    }
+
+    58% {
+        color: skyblue;
+    }
+
+    59% {
+        color: blueviolet;
+    }
+
+    60% {}
+
+    61% {
+        color: red;
+    }
+
+    62% {
+        color: orangered;
+    }
+
+    63% {
+        color: orange;
+    }
+
+    64% {
+        color: yellow;
+    }
+
+    65% {
+        color: yellowgreen;
+    }
+
+    66% {
+        color: green;
+    }
+
+    67% {
+        color: blue;
+    }
+
+    68% {
+        color: skyblue;
+    }
+
+    69% {
+        color: blueviolet;
+    }
+
+    70% {}
+
+    71% {
+        color: red;
+    }
+
+    72% {
+        color: orangered;
+    }
+
+    73% {
+        color: orange;
+    }
+
+    74% {
+        color: yellow;
+    }
+
+    75% {
+        color: yellowgreen;
+    }
+
+    76% {
+        color: green;
+    }
+
+    77% {
+        color: blue;
+    }
+
+    78% {
+        color: skyblue;
+    }
+
+    79% {
+        color: blueviolet;
+    }
+
+    80% {}
+
+    81% {
+        color: red;
+    }
+
+    82% {
+        color: orangered;
+    }
+
+    83% {
+        color: orange;
+    }
+
+    84% {
+        color: yellow;
+    }
+
+    85% {
+        color: yellowgreen;
+    }
+
+    86% {
+        color: green;
+    }
+
+    87% {
+        color: blue;
+    }
+
+    88% {
+        color: skyblue;
+    }
+
+    89% {
+        color: blueviolet;
+    }
+
+    90% {
+        color: rgb(255, 96, 123);
+    }
+
+    91% {
+        color: red;
+    }
+
+    92% {
+        color: orangered;
+    }
+
+    93% {
+        color: orange;
+    }
+
+    94% {
+        color: yellow;
+    }
+
+    95% {
+        color: yellowgreen;
+    }
+
+    96% {
+        color: green;
+    }
+
+    97% {
+        color: blue;
+    }
+
+    98% {
+        color: skyblue;
+    }
+
+    99% {
+        color: blueviolet;
+    }
+
+    100% {
+        color: rgb(255, 96, 123);
+    }
+}

@@ -1,0 +1,12 @@
+<script type="text/javascript">
+    function changeImage(a) {
+        document.getElementById("img").src=a.src;
+    }
+</script>
+<div id="main_img">
+    <img id="img" src="sad-sam.jpeg">
+</div>
+<div id="thumb_img">
+    <img src='sad-sam.jpeg'  onclick='changeImage("happy-sam.jpeg");'>
+    <img src='happy-sam.jpeg'  onclick='changeImage("sad-sam.jpeg");'>
+</div>
