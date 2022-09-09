@@ -9,20 +9,28 @@
 </head>
 
 <body>
-    <div class="container">
+    <input type="text" size="40px" onkeypress="lol(event)">
+    <!-- <div class="container">
         <input id="input" value="Enter something lol">
-        <button id="Button" onclick="javascript:alert('Hello World!')">Button</button>
+        <button id="Button" onclick="javascript:alert('Hello World!')">Button</button> -->
     </div>
 
     <script>
-        let list = document.getElementById("input");
-        var input = document.getElementById("input");
-        input.addEventListener("keypress", function (event) {
-            if (event.key === "Enter") {
-                event.preventDefault();
-                document.getElementById("Button").click();
+        // let list = document.getElementById("input");
+        // var input = document.getElementById("input");
+        // input.addEventListener("keypress", function (event) {
+        //     if (event.key === "Enter") {
+        //         event.preventDefault();
+        //         document.getElementById("Button").click();
+        //     }
+        // });
+        function lol(event) {
+            let x = event.key;
+            if (x == "Enter") {
+                alert("You suck!")
             }
-        });
+        }
+
     </script>
 </body>
 

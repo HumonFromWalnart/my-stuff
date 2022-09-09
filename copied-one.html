@@ -1,0 +1,160 @@
+<style>
+    .border {
+        width: 500px;
+        height: 900px;
+        background-color: black;
+        border-radius: 7%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    #numbers {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .result {
+        width: 400px;
+        height: 100px;
+    }
+
+    .row-1 {
+        display: flex;
+        gap: 25px;
+    }
+
+    .row-2 {
+        display: flex;
+        gap: 25px;
+    }
+
+    .row-3 {
+        display: flex;
+        gap: 25px;
+    }
+
+    .row-4 {
+        display: flex;
+        gap: 25px;
+    }
+
+    .row-5 {
+        display: flex;
+        gap: 25px;
+    }
+
+    .light {
+        background-color: rgb(197, 213, 213);
+        width: 80px;
+        height: 80px;
+        border-radius: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    .orangee {
+        background-color: orange;
+        width: 80px;
+        height: 80px;
+        border-radius: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    .dark {
+        background-color: grey;
+        width: 80px;
+        height: 80px;
+        border-radius: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    #zero {
+        width: 185px;
+        height: 80px;
+        border-radius: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: grey;
+        font-size: 30px;
+    }
+
+    #xxo {
+        width: 395px;
+        height: 50px;
+        font-size: 30px;
+        border-radius: 7px;
+        border: none;
+        background-color: black;
+        display: flex;
+        justify-content: end;
+        color: white;
+    }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="cal2.css" />
+</head>
+
+<body onkeydown="result()">
+    <div class="border">
+        <div id="result">
+            <div id="inputNumber">0</div>
+        </div>
+        <div id="numbers">
+            <div class="row-1">
+                <div class="light">AC</div>
+                <div class="light">+/-</div>
+                <div class="light">%</div>
+                <div class="orangee">÷</div>
+            </div>
+            <div class="row-2">
+                <div class="dark" class="dark7">1</div>
+                <div class="dark" class="dark8">2</div>
+                <div class="dark" class="dark9">3</div>
+                <div class="orangee">x</div>
+            </div>
+            <div class="row-3">
+                <div class="dark" class="dark4">4</div>
+                <div class="dark" class="dark5">5</div>
+                <div class="dark" class="dark6">6</div>
+                <div class="orangee">-</div>
+            </div>
+            <div class="row-4">
+                <div class="dark" class="dark1">7</div>
+                <div class="dark" class="dark2">8</div>
+                <div class="dark" class="dark3">9</div>
+                <div class="orangee">+</div>
+            </div>
+        </div>
+        <div class="row-5">
+            <div id="zero">0</div>
+            <div class="dark">.</div>
+            <div class="orangee">=</div>
+        </div>
+    </div>
+</body>
+<script>
+
+</script>
+
+</html>
