@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 500px;
+    height: 300px;
+    background-color: gray;
+    align-items: center;
+}
+
+#insertNumber {
+    width: 390px;
+    height: 60px;
+    outline: none;
+    font-size: 40px;
+}
+
+#resultButton {
+    width: 100px;
+    height: 30px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.number-container {
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 10px;
+
+}

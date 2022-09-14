@@ -6,66 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="real-calculator.css">
 </head>
 
 <body>
     <div class="container">
-        <div>
-            <header class="calculator-head">
-                <input </header>
-                <div class="calculator-main">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
+        <header class="calculator-head">
+            <input id="insertNumber" type="text">
+        </header>
+        <div class="calculator-main">
+            <button onclick="clearBoi()" style="width:30px; height: 20px;">C</button>
+            <div class="number-container">
+                <div id="number" onclick="numberClick(1)">1</div>
+                <div id="number" onclick="numberClick(2)">2</div>
+                <div id="number" onclick="numberClick(3)">3</div>
+            </div>
+            <div class="number-container">
+                <div id="number" onclick="symbolClick(34)">+</div>
+                <div id="number" onclick="symbolClick(42)">-</div>
+                <div id="number" onclick="symbolClick(69)">%</div>
+            </div>
         </div>
-        <!-- <input id="entry" type="number">
-        *
-        <input id="exit" type="number">
-        <button onclick="multify()">=</button>
-        <p id="result" type="text" onpress="result()"></p> -->
+        <button onclick="doMath()" id="resultButton">=</button>
     </div>
-    <style>
-        .container {
-            display: flex;
-            justify-content: space-around;
-            width: 500px;
-        }
-    </style>
+
     <script>
-        // const entry = () => {
-        //     const entryValue = document.getElementById("entry").value;
-        //     return entryValue;
-        // }
-        // const exit = () => {
-        //     const exitValue = document.getElementById("exit").value;
-        //     return exitValue;
-        // }
-        // if (exit() == document.getElementById("exit").value) {
-        //     console.log("nice try")
-        // }
-        // const multify = () => {
-        //     const entry = (parseInt(document.getElementById("entry").value));
-        //     const exit = (parseInt(document.getElementById("exit").value));
-        //     const result = (entry * exit);
-        //     console.log(result);
-        // }
+        const operator = number;
+        let num1;
+        let num2;
+        const clearBoi = () => {
+            document.getElementById("insertNumber").value = "";
+        }
+        const numberClick = (number) => {
+            num1 = number;
+            document.getElementById("insertNumber").value += num1;
+            console.log(number);
+        }
+        const symbolClick = () => {
+            if (number == 34) {
+                document.getElementById("insertNumber").value = "+";
+            }
+            if (number == 42) {
+                document.getElementById("insertNumber").value = "-";
+            }
+            if (number == 69) {
+                document.getElementById("insertNumber").value = "%";
+            }
+        }
+        const doMath = () => {
+            if (symbol == '+') {
+                result = number1 + number2;
+            }
+            else if (operator == '-') {
+                result = number1 - number2;
+            }
+            else if (operator == '*') {
+                result = number1 * number2;
+            }
+            else {
+                result = number1 / number2;
+            }
+        }
     </script>
 </body>
 
