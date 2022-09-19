@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stopwatch.css">
+</head>
+
+<body>
+    <div id="container">
+        <div style="display:flex;">
+            <input id="time" style="margin-bottom: 100px; width:25px; height:20px; outline: none;">
+            </input>
+            <input id="time-mid" style="margin-bottom: 100px; width:25px; height:20px; outline: none;">
+            </input>
+            <input id="time-elder" style="margin-bottom: 100px; width:25px; height:20px; outline: none;">
+            </input>
+        </div>
+        <div id="button-container">
+            <button id="resetButton" onclick="resetTimer()">Reset</button>
+            <button id="startButton" onclick="startTimer()">Start</button>
+            <button id="startButton" onclick="pause()">Pause</button>
+        </div>
+    </div>
+
+    <script>
+        var midTime = "";
+        var eldenTime = "";
+        let timer = document.getElementById("time")
+        const startTimer = () => {
+            setInterval(() => {
+                timer.value = Number(timer.value) + 1;
+                if (timer.value == 100) {
+                    midTime = document.getElementById("time-mid");
+                    timer.value = 0;
+                    midTime.value = Number(midTime.value) + 1;
+                    console.log(midTime.value)
+                }
+                if (midTime.value == 60) {
+                    eldenTime = document.getElementById("time-elder");
+                    console.log(midTime)
+                    console.log(eldenTime)
+                    midTime.value = 0;
+
+                    eldenTime.value = Number(eldenTime.value) + 1;
+                    console.log(eldenTime.value)
+                }
+
+            }, 10);
+            console.log(timer.value);
+        }
+        const resetTimer = () => {
+
+        }
+
+    </script>
+</body>
+
+</html>

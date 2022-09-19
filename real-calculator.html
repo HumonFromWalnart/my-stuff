@@ -22,18 +22,16 @@
                 <div id="number" onclick="numberClick(3)">3</div>
             </div>
             <div class="number-container">
-                <div id="number" onclick="symbolClick(34)">+</div>
-                <div id="number" onclick="symbolClick(42)">-</div>
-                <div id="number" onclick="symbolClick(69)">%</div>
+                <div id="symbol" onclick="symbolClick(34)">+</div>
+                <div id="symbol" onclick="symbolClick(42)">-</div>
+                <div id="symbol" onclick="symbolClick(69)">%</div>
             </div>
         </div>
         <button onclick="doMath()" id="resultButton">=</button>
     </div>
 
     <script>
-        const operator = number;
         let num1;
-        let num2;
         const clearBoi = () => {
             document.getElementById("insertNumber").value = "";
         }
@@ -42,7 +40,7 @@
             document.getElementById("insertNumber").value += num1;
             console.log(number);
         }
-        const symbolClick = () => {
+        const symbolClick = (number) => {
             if (number == 34) {
                 document.getElementById("insertNumber").value = "+";
             }
@@ -52,20 +50,7 @@
             if (number == 69) {
                 document.getElementById("insertNumber").value = "%";
             }
-        }
-        const doMath = () => {
-            if (symbol == '+') {
-                result = number1 + number2;
-            }
-            else if (operator == '-') {
-                result = number1 - number2;
-            }
-            else if (operator == '*') {
-                result = number1 * number2;
-            }
-            else {
-                result = number1 / number2;
-            }
+
         }
     </script>
 </body>

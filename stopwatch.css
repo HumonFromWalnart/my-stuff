@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(dark-sea.gif);
+    background-size: cover;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 600px;
+    background-image: url(flying-golland.gif);
+    background-size: cover;
+    justify-content: end;
+    align-items: center;
+    box-shadow: 0 0 999px black;
+}
+
+#button-container {
+    display: flex;
+    margin-bottom: 30px;
+    gap: 30px;
+}
+
+#startButton {
+    width: 120px;
+    height: 40px;
+    color: white;
+    background-color: rgb(39, 39, 39);
+}
+
+#resetButton {
+    width: 120px;
+    height: 40px;
+    color: azure;
+    background-color: rgb(39, 39, 39);
+}
