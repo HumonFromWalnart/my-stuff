@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #letters {
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        flex-direction: column;
+        background-color: grey;
+        border: none;
+        margin: 0%;
+    }
+
+    audio {
+        display: none;
+    }
+</style>
+
+<body>
+    <audio controls autoplay loop>
+        <source src="C418 - Aria Math (mp3store.cc).mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="letters" onclick="letter()"></button>
+</body>
+
+<script>
+    var letters = document.getElementById("letters");
+
+    var frozen = new Image(200, 100); frozen.src = "frozen-jonnhy.gif";
+
+    var cool = new Image(200, 100); cool.src = "cool-day-pixel.gif";
+
+    var coolSec = new Image(200, 100); coolSec.src = "cool-day.gif";
+
+    var brokenClouds = new Image(200, 100); brokenClouds.src = "broken-clouds.jpg";
+
+    var cloudy = new Image(200, 100); cloudy.src = "cloudy-weather.gif"
+
+    var fewClouds = new Image(200, 100); fewClouds.src = "few-clouds.gif"
+
+    var scatteredClouds = new Image(200, 100); scatteredClouds.src = "scattered clouds.gif"
+
+    var clear = new Image(200, 100); clear.src = "clear-sky-weather.jpg"
+
+    var goodWeather = new Image(200, 100); goodWeather.src = "good-weather.gif"
+
+    var warm = new Image(200, 100); warm.src = "warm-weather.gif"
+
+    var ello = new Image(200, 200); ello.src = "hello-carol.gif"
+
+    const letter = () => {
+        setTimeout(() => {
+            letters.innerHTML = "W";
+        }, 500);
+        setTimeout(() => {
+            letters.innerHTML += "e";
+        }, 600);
+        setTimeout(() => {
+            letters.innerHTML += "l";
+        }, 700);
+        setTimeout(() => {
+            letters.innerHTML += "c";
+        }, 800);
+        setTimeout(() => {
+            letters.innerHTML += "o";
+        }, 1000);
+        setTimeout(() => {
+            letters.innerHTML += "m";
+        }, 1100);
+        setTimeout(() => {
+            letters.innerHTML += "e";
+        }, 1200);
+        setTimeout(() => {
+            letters.innerHTML += " ";
+        }, 1300);
+        setTimeout(() => {
+            letters.innerHTML += "xD";
+        }, 1400);
+        // setTimeout(() => {
+        //     if (letters.innerHTML == "Welcome xD") {
+        //         letters.appendChild(frozen);
+        //     }
+        // }, 1300);
+        // setTimeout(() => {
+        //     if (letters.innerText == "Welcome xD") {
+        //         letters.appendChild(cool);
+        //     }
+        // }, 1500);
+        // setTimeout(() => {
+        //     if (letters.innerText == "Welcome xD") {
+        //         letters.appendChild(coolSec);
+        //     }
+        // }, 1700);
+        // setTimeout(() => {
+        //     if (letters.innerText == "Welcome xD") {
+        //         letters.appendChild(warm);
+        //     }
+        // }, 1900);
+        // setTimeout(() => {
+        //     if (letters.innerText == "Welcome xD") {
+        //         letters.appendChild(goodWeather);
+        //     }
+        // }, 2100);
+        // setTimeout(() => {
+        //     if (letters.innerText == "Welcome xD") {
+        //         letters.appendChild(cloudy);
+        //     }
+        // }, 2300);
+        // setTimeout(() => {
+        //     if (letters.innerText == "Welcome xD") {
+        //         letters.appendChild(fewClouds);
+        //     }
+        // }, 2500);
+        // setTimeout(() => {
+        //     if (letters.innerText == "Welcome xD") {
+        //         letters.appendChild(brokenClouds);
+        //     }
+        // }, 2700);
+        // setTimeout(() => {
+        //     if (letters.innerHTML == "Hello") {
+        //         letters.innerHTML = "Hel";
+        //     }
+        // }, 1100);
+        setTimeout(() => {
+            if (letters.innerText == "Welcome xD") {
+                letters.innerText = "Hello Everybody";
+                letters.appendChild(ello);
+            }
+        }, 1600);
+        setTimeout(() => {
+            if (letters.innerText == "Hello Everybody") {
+                letters.innerText = "My name is Markiplier";
+                letters.appendChild(coolSec);
+            }
+        }, 2700);
+        setTimeout(() => {
+            if (letters.innerText == "My name is Markiplier") {
+                letters.innerText = "Today we are going to play Five Night At Freddy's";
+            }
+        }, 3700);
+        setTimeout(() => {
+            if (letters.innerText == "Today we are going to play Five Night At Freddy's") {
+                letters.innerText = "So the last night that we lost to Freddy";
+            }
+        }, 5500);
+        setTimeout(() => {
+            if (letters.innerText == "So the last night that we lost to Freddy") {
+                letters.innerText = "I want my REVENGE!";
+            }
+        }, 7300);
+        setTimeout(() => {
+            if (letters.innerText == "I want my REVENGE!") {
+                letters.innerText = "Okay, lets begin.";
+            }
+        }, 8400);
+        setTimeout(() => {
+            if (letters.innerText == "Okay, lets begin") {
+                const sweatyGamer = document.createElement("video");
+
+                sweatyGamer.src = "Among Us but You're Stuck With the Worst Task (Sweaty Speedrunner Meme Original) (online-video-cutter.com).mp4"
+
+                sweatyGamer.autoplay = true;
+                sweatyGamer.loop = true;
+                sweatyGamer.controls = true;
+                sweatyGamer.muted = false;
+                sweatyGamer.height = 240; // 👈️ in px
+                sweatyGamer.width = 320;
+
+                letters.appendChild(sweatyGamer);
+            }
+        }, 8900);
+    }
+
+</script>
+
+</html>

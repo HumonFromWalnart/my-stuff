@@ -3,7 +3,7 @@ document.getElementsByClassName("image")[0].style = "height: 100px; width : 100p
 console.log(document.getElementsByClassName("image"))
 
 function beHappy{
-    if(getElementsByClassName("image")[1] === ){
-         
+    if (getElementsByClassName("image")[1] ==  ) {
+
     }
 }

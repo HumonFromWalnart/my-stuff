@@ -15,10 +15,10 @@
 </html>
 
 <script>
-    willGetBobux = new Promise((resolve, reject) => {
+    let willGetBobux = new Promise((resolve, reject) => {
         setTimeout(() => {
             let isMomHappy = Math.round(Math.random());
-            if (isMomHappy) {
+            if (isMomHappy == 1) {
                 let bobux = {
                     amount: "400 Bobux",
                 };
